@@ -10,4 +10,8 @@ class StudentsController < ApplicationController
     render json: student
   end
 
+  def by_name
+    student = Student.all.where(first_name: params[:])
+  end
+
 end
