@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   end
 
   def by_name
-    student = Student.all.where(first_name: params[:])
+    student = Student.all.where(first_name: params[:value1] || last_name: params[:value1]
   end
 
 end
